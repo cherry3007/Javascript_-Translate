@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Translate App</h2>
+        <div class="translation-box">
+            <textarea id="inputText" placeholder="Введите текст..."></textarea>
+            <div class="controls">
+                <select id="inputLang"></select>
+                <button class="speak-btn" data-target="inputText">🔊</button>
+            </div>
+        </div>
+        <div class="translation-box">
+            <textarea id="outputText" placeholder="Результат перевода..." readonly></textarea>
+            <div class="controls">
+                <select id="outputLang"></select>
+                <button class="speak-btn" data-target="outputText">🔊</button>
+            </div>
+        </div>
+        <button id="translateBtn" class="translate-btn">Перевод</button>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
